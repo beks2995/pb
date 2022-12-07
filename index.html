@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section class="chart">
+            <div class="chart__wrapper">
+                <div class="chart__svg">
+                    <div class="chart__line">
+
+                    </div>
+                    <div class="chart__info">
+                        <div class="chart__loyalti">
+                            <img class="flag" src="./src/img/loyalty.svg" alt="">
+                        </div>
+                        <div class="chart__text">
+                            <div class="chart__text-percent">72.
+                                <span class="number">
+                                    7
+                                </span>
+                                
+                            </div>
+                            <div class="chart__text-loyal">
+                                <strong >
+                                    Лояльность
+                                </strong>
+                                <br>
+                                <span>
+                                    <b>ниже среднего</b> 
+                                </span>
+                            </div>
+                            <div class="chart__text-descr">
+                                <span>
+                                    по отрасли: FMCG
+                                </span>
+                                <br>
+                                <span>
+                                    значений слева от медианы
+                                </span>
+                                <br>
+                                <span>
+                                    52.0% - 83.1%
+                                </span>
+                            </div>
+                            <div class="chart__text-number">
+                                3.1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart__circle">
+                        <svg class="test" width="500" height="500">
+                            <defs>
+                                <linearGradient id="linear" x1="0%" y1="0%"><stop offset="0%" stop-color="var(--grey)"/>
+                                    <stop offset="100%" stop-color="var(--grey)"/>
+                                </linearGradient>
+                                <linearGradient id="linear1" x1="0%" y1="0%"><stop offset="0%" stop-color="var(--green)"/>
+                                    <stop offset="100%" stop-color="var(--green)"/>
+                                </linearGradient>
+                                <linearGradient id="linear2" x1="0%" y1="0%"><stop offset="0%" stop-color="var(--yellow)"/>
+                                    <stop offset="100%" stop-color="var(--yellow)"/>
+                                </linearGradient>
+                            </defs>
+                            <circle id="grey" cx="250" cy="250" r="200" stroke="url(#linear)" stroke-linecap="round" stroke-width="15" fill="transparent" transform="rotate(290 250,250)"/>
+                            <circle id="green" cx="250" cy="250" r="200" stroke="url(#linear1)" stroke-linecap="round" stroke-width="17" fill="transparent" transform="rotate(290 250,250)"/>
+                            <circle id="yellow" cx="250" cy="250" r="200" stroke="url(#linear2)" stroke-linecap="round" stroke-width="19" fill="transparent" transform="rotate(290 250,250)"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="chart__category">
+                    <div class="chart__category-item">
+                        <div class="chart__category-name">
+                            <strong>
+                                Промоутеры
+                            </strong>
+                        </div>
+                        <div class="chart__category-wrapper">
+                            <div class="chart__category-percent">
+                                <div class="percent">
+                                    32.0%
+                                </div>
+                                <div class="chart__category-people">
+                                    <span>
+                                        81
+                                    </span>
+                                    <img class="human" src="./src/img/human_full.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="chart__category-line">
+                                <div class="lineup green"></div>
+                                <div class="linedown green"></div>
+                                <div class="total">
+                                    +1.2%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div class="chart__category-item">
+                            <div class="chart__category-name">
+                                <strong>
+                                    Скептики
+                                </strong>
+                            </div>
+                            <div class="chart__category-wrapper">
+                                <div class="chart__category-percent">
+                                    <div class="percent">
+                                        39.1%
+                                    </div>
+                                    <div class="chart__category-people">
+                                        <span>
+                                            8
+                                        </span>
+                                        <img class="human" src="./src/img/human_full.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="chart__category-line">
+                                    <div class="lineup yellow"></div>
+                                    <div class="linedown yellow"></div>
+                                    <div class="total">
+                                        +4.8%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart__category-item">
+                            <div class="chart__category-name">
+                                <strong>
+                                    Критики
+                                </strong>
+                            </div>
+                            <div class="chart__category-wrapper">
+                                <div class="chart__category-percent">
+                                    <div class="percenth">
+                                        79.8%
+                                    </div>
+                                    <div class="chart__category-people">
+                                        <span>
+                                            7
+                                        </span> 
+                                        <img class="human" src="./src/img/human_full.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="chart__category-line">
+                                    <div class="lineuph red">
+        
+                                    </div>
+                                    <div class="linedown red">
+        
+                                    </div>
+                                    <div class="total">
+                                        -9.7%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
